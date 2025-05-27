@@ -11,8 +11,8 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 members = [
-    Member(name="Alice Johnson", email="alice@example.com"),
-    Member(name="Bob Smith", email="bob@example.com")
+    Member(name="Victoria Bernice", email="victoria@gmail.com"),
+    Member(name="Tori Byrant", email="torib@gmail.com")
 ]
 
 books = [
