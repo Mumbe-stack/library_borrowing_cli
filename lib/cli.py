@@ -38,6 +38,11 @@ def borrow_book():
     session.add(borrow)
     session.commit()
     print("Book borrowed successfully!")
+    
+    member = session.get(Member, member_id)
+    if member:
+        session.delete(member)
+        session.commit()
 
 def return_book():
     record_id = int(input("Enter Borrow Record ID to return: "))
